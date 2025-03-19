@@ -1,32 +1,69 @@
 body {
     text-align: center;
-    background-color: #252525;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 button {
-    height: 40px;
-    width: 80px;
-    border-radius: 20%;
-    border: 2px solid #000000;
-    background-color: #fff;
-    color: #252525;
-    font-size: 16pt;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 1.2rem;
     font-weight: 600;
-    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
 }
+
 button:hover {
-    background-color: #b9b9b9;
+    background-color: #45a049;
 }
 
 #currentNumber {
-    margin: 1 20px;
-    font-size: 40pt;
+    font-size: 3rem;
     font-weight: bold;
+    margin: 20px 0;
+    color: #64b5f6;
 }
 
 a {
-    color: #fff;
+    color: #64b5f6;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #42a5f5;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+h1,p{
+    margin-bottom:20px;
 }
